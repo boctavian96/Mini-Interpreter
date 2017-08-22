@@ -1,8 +1,24 @@
 program mini_interpreter;
 
-{To do : Add file functionality}
 var 
     txt : string;
+    f : text;
+
+procedure ReadFile();
+var 
+    aux_txt : string;
+begin 
+    txt := '';
+    assign(f,'main.mi');
+    reset(f);
+    while not EOF(f) do 
+    begin 
+	readln(f, aux_txt);
+        txt := txt + aux_txt;
+	aux_txt := '';
+    end;
+    close(f);
+end;
 
 procedure ProcessText(start : word; stop : word; s : string);
 var i, aux_i:word;
@@ -48,6 +64,6 @@ begin
 end;
 
 begin
-    txt := '';
+    ReadFile();
     ProcessText(1, length(txt), txt);
 end.
