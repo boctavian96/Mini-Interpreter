@@ -42,10 +42,7 @@ begin
             write(chr(p_int^));
         
         if s[i] = '0' then 
-            p_int^ := 0;
-   
-
-        
+            p_int^ := 0;  
     end;
 end;
 
