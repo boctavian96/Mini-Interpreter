@@ -1,5 +1,5 @@
 program mini_interpreter;
-
+{Free Pascal Compiler version 3.0.0+dfsg-2 [2016/01/28] for x86_64}
 var 
     txt : string;
     f : text;
