@@ -1,4 +1,4 @@
-program mini_interpreter
+program mini_interpreter;
 
 var 
     txt : string;
