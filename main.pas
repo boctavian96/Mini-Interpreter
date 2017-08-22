@@ -1,5 +1,6 @@
 program mini_interpreter;
 
+{To do : Add file functionality}
 var 
     txt : string;
 
